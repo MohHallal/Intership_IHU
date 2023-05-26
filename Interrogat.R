@@ -10,7 +10,7 @@ con = dbConnect(RMySQL::MySQL(),
 Interrogating <- function(Sample_name="", Genus="", Species="", Arthropod_type="", Body_part="", Developmental_stage="", Protocol_ID=0, Location_ID=0, Family=""){
   query <- "SELECT S.Sample_ID,M.Sample_name, PD.Family,P.Genus, P.Species, MI.Arthropod_type, MI.Body_part, MI.Developmental_stage, Protocol_ID, Location_ID 
   FROM Sample AS S JOIN Phylogeny_short AS P ON S.Phylo_ID=P.Phylo_ID JOIN Mass AS M ON M.Sample_ID=S.Sample_ID JOIN Morphological_infos AS MI 
-  ON S.Sample_ID=MI.Sample_ID JOIN Phylogeny_detailed AS PD ON PD.Phylo_ID=P.Phylo_ID" # La resuete initial
+  ON S.Sample_ID=MI.Sample_ID JOIN Phylogeny_detailed AS PD ON PD.Phylo_ID=P.Phylo_ID" # La requete initial
   changed <- FALSE # Changed est FALSE lorsque la requete initial n'est pas changé, et devient TRUE lorsque on apporte une modification
   if (Family != ""){ # Si l'utilisateur à préciser une Family à filtrer, ce bloc va étre executer (pareil pour les autres parametres)
     query <- sprintf("%s WHERE PD.Family='%s'",query,Family)
