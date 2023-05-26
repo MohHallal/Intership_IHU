@@ -6,7 +6,7 @@ con = dbConnect(RMySQL::MySQL(),
                 host='localhost',
                 port=3306,
                 user='mohamed',
-                password='Azerty217!')
+                password='')
 deleter <- function(Sample_name){
   query_check_existence <- sprintf("SELECT COUNT(*) FROM Mass WHERE Sample_name='%s'",Sample_name)
   check_existence <- dbGetQuery(conn = con, statement = query_check_existence)
