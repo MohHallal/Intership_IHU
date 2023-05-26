@@ -1,3 +1,4 @@
+# Bionvenue
 L'objectif de mon stage était de contribuer à la création et à la gestion d'un
 base de données de référence (de données de spectrométrie de masse des arthropodes) en utilisant SQL, permettant une manipulation efficace des données et
 récupération pour l'analyse de correspondance spectrale. De plus, pour développer des scripts en R afin de rationaliser le
