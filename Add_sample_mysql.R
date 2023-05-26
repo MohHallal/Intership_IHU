@@ -8,7 +8,7 @@
                              host='localhost',
                              port=3306,
                              user='mohamed',
-                             password='Azerty217!')
+                             password='')
 
 Add_to_DB<- function(Sample_Name,type,body_part,dvlpt_stage,homogeneization_appartus,homogeneization_medium,storing_mode,matrix,genus,species,
                      arbirary_name=NA,MS_system_used=NA,Institut=NA,nbr_of_spectra_used=NA,strain=NA,gene=NA,nbr_access=NA,cover=NA,identity=NA,
