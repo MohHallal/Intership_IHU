@@ -5,7 +5,7 @@ con = dbConnect(RMySQL::MySQL(),
                 host='localhost',
                 port=3306,
                 user='mohamed',
-                password='Azerty217!')
+                password='')
 
 Interrogating <- function(Sample_name="", Genus="", Species="", Arthropod_type="", Body_part="", Developmental_stage="", Protocol_ID=0, Location_ID=0, Family=""){
   query <- "SELECT S.Sample_ID,M.Sample_name, PD.Family,P.Genus, P.Species, MI.Arthropod_type, MI.Body_part, MI.Developmental_stage, Protocol_ID, Location_ID 
